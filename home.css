@@ -1,0 +1,197 @@
+.home {
+  color: white;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Source Code Pro';
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 15px;
+  flex: 1;
+}
+
+.welcome {
+  margin-bottom: 30px;
+}
+
+.my-name {
+  margin-bottom: 4px;
+}
+
+.sachin {
+  font-weight: bold;
+}
+
+.middle-section {
+  flex: 2;
+}
+
+.sachin-photo {
+  border-radius: 50%;
+  width: 100%;
+
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin: 0px 15px;
+}
+
+.software {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mcmaster {
+  font-weight: bold;
+}
+
+.kbm {
+  margin-bottom: 30px;
+}
+
+.div-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 5px 5px 0;
+  border-color: black orange white black;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  transform: rotate(45deg);
+}
+
+.arrow2 {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 5px 5px 0;
+  border-color: black turquoise white black;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  transform: rotate(45deg);
+}
+
+.mybackground {
+  color: white;
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mybackground1 {
+  color: white;
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+}
+
+
+.title-div {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  
+}
+
+.fist-bump {
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.fist-bump:hover {
+  background-color: rgb(255, 232, 190);
+}
+
+.fist-bump:active {
+  background-color: orange;
+}
+
+.tooltip {
+  position: absolute;
+  color: orange;
+  background-color: white;
+  left: -155px;
+  width: 145px;
+  top: -1.5px;
+  bottom: -1.5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  opacity: 0;
+  font-size: 16px;
+  font-family: 'Source Code Pro';
+  transition: opacity 0.3s;
+}
+
+.fist-bump:active .tooltip {
+  opacity: 1;
+}
+
+
+
+.my-background-text {
+  margin: 0 150px;
+  opacity: 0;
+  margin-bottom: 75px;
+}
+
+
+
+.my-background-text-middle {
+  margin: 30px 0;
+  opacity: 1;
+}
+
+
+.show {
+  opacity: 1;
+  transition: all 6s;
+}
+
+.show2 {
+  opacity: 1;
+  transition: all 4s;
+}
+
+
+@media(prefers-reduced-motion) {
+  .mybackground1 {
+    transition: none;
+  }
+  .my-background-text {
+    transition: none;
+  }
+}

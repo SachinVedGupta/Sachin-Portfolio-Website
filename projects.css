@@ -1,0 +1,113 @@
+.projects {
+  color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Source Code Pro';
+  transition: all 3s;
+  opacity: 0;
+}
+
+
+.show {
+  opacity: 1;
+
+}
+
+.one-project:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+
+.one-project {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  flex: 1;
+  background-color: hwb(264 33% 42%);
+  transition: box-shadow 0.3s;
+
+}
+
+/*<div class="one-project">
+      <div class="project-title">Stockie</div>
+      <div class="project-description">A tool to increase efficiency for stock brokers and novice investors alike</div>
+      <div class="project-image"><img src="sachin-square-one.png" class="project-image-edit"></div>
+      <div class="project-tools">C++, API</div>
+      <div class="github-link"><a class="github-link-edit" href="https://github.com/SachinG99" target="_blank">View on GitHub</a></div>
+    </div>*/
+
+
+.project-title {
+  font-weight: bold;
+  padding: 10px 10px;
+}
+
+.project-description {
+  text-align: center;
+  background-color: white;
+  color: #6e5494;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-image-edit {
+  width: 100%;
+}
+
+.project-tools {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: -5px;
+  color: #6e5494;
+  padding: 10px 0;
+
+
+}
+
+.github-link {
+  background-color: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  color: white;
+  transition: 0.3s;
+}
+
+.github-link:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 55px;
+  padding: 50px;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+
+@media (max-width: 700px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 1100px) {
+  .project-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+}

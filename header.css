@@ -1,0 +1,102 @@
+.header {
+  display: flex;
+  height: 55px;
+  background-color: white;
+  align-items: center;
+  justify-content: space-between;
+  right: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.tabs {
+  font-family: 'Source Code Pro';
+  border: none;
+  background-color: white;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.tabs1 {
+  font-family: 'Source Code Pro';
+  border: none;
+  background-color: white;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  color: orange;
+  z-index: 10;
+}
+
+.sg {
+  font-family: 'Source Code Pro';
+  border: none;
+  background-color: white;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, opacity 0.3s;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  opacity: 1;
+  height: 22.5px;
+  margin-top: -30px;
+  z-index: 4;
+}
+
+.first-color {
+  color: red;
+}
+
+.clicked:active .first-color{
+  color:rgb(85, 26, 139);
+}
+
+.clicked:active {
+  color: red;
+}
+
+.second-color {
+  color: turquoise;
+}
+
+.third-color {
+  color: blue;
+}
+
+.tabs:hover, .tabs1:hover, .sg:hover {
+  box-shadow: 0 15px 5px -5px #00000030;
+}
+
+
+
+.left-side-header {
+  margin-left: 16px;
+  margin-right: 45px;
+}
+
+.right-side-header {
+  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+@media (max-width: 700px) {
+  .sg {
+    opacity: 1;
+    margin-top: 16px;
+  }
+  .tabs1 { 
+    opacity: 0;
+  }
+
+
+}
