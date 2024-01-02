@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: 'Source Code Pro';
-  transition: all 3s;
+  transition: all 0.5s;
   opacity: 0;
 }
 
@@ -55,6 +55,10 @@
   font-size: 14px;
 }
 
+.proj-desc {
+  width: 100%;
+}
+
 .project-image {
   width: 100%;
 }
@@ -90,7 +94,7 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 55px;
   padding: 50px;
   row-gap: 50px;
