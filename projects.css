@@ -101,17 +101,3 @@
   column-gap: 50px;
 }
 
-
-@media (max-width: 700px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-}
-
-@media (min-width: 1100px) {
-  .project-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-}
