@@ -24,7 +24,7 @@
       gap: 20px;
       box-shadow: none; /* Remove shadow if desired */
       margin-top: 50px; /* Push the navbar down by 50 pixels */
-      margin: 70px 40px -80px 40px ;
+      margin: 5px 40px -50px 40px ;
       
     }
 
@@ -36,10 +36,28 @@
       border-radius: 5px;
       cursor: pointer;
       font-family: 'Source Code Pro', monospace;
+      transition: box-shadow 0.3s;
     }
 
     .nav-button:hover {
       background-color: #5b457b; /* Darker shade for hover effect */
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+
+
+    .section-header {
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      margin-top: 85px;
+    }
+
+    .section-header2 {
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      margin-top: 90px;
+      margin-bottom: -90px;
     }
   </style>
 </head>
@@ -61,13 +79,25 @@
     </div>
   </div>
 
+
+  <div class="section-header featured-header">
+    Featured
+  </div>
+
+  
+
   <!-- Navigation bar for project links -->
   <div class="nav-bar">
+    
     <button class="nav-button" onclick="scrollToProject('miti')">MITI Music Studio</button>
     <button class="nav-button" onclick="scrollToProject('stocksee')">StockSee</button>
     <button class="nav-button" onclick="scrollToProject('autosurgeon')">AutoSurgeon</button>
     <button class="nav-button" onclick="scrollToProject('quantify')">Quantify</button>
     <button class="nav-button" onclick="scrollToProject('bumpSense')">BumpSense Technologies</button>
+  </div>
+
+  <div class="section-header2 featured-header">
+    All
   </div>
 
   <div class="project-grid">

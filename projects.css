@@ -149,3 +149,44 @@
 }
 
 
+/* Style for featured projects */
+.featured-project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns for featured projects */
+  gap: 20px; /* Space between projects */
+  margin: 20px 40px;
+}
+
+.featured-project-grid .projects {
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+}
+
+/* Styling for all projects below featured */
+.all-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px;
+}
+
+.all-projects .projects {
+  flex: 1 1 calc(33% - 20px); /* Adjust based on the layout you want for other projects */
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+}
+
+/* Add a title for the "All Projects" section */
+.section-title {
+  text-align: center;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  height: 30px;
+}
+
+
+
