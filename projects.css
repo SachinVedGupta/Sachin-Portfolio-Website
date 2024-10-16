@@ -101,3 +101,51 @@
   column-gap: 50px;
 }
 
+
+.project-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  background-color: black; /* Change to match your theme */
+  padding: 10px;
+  
+}
+
+.project-btn {
+  background-color: #6e5494; /* Button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  
+}
+
+.project-btn:hover {
+  background-color: #5b4681; /* Darker shade on hover */
+}
+
+/* Add styles for the navigation bar */
+/* Add styles for the navigation bar */
+
+
+/* Add styles for the navigation bar */
+.nav-bar {
+  position: relative; /* Change to relative so it scrolls with the page */
+  background-color: transparent; /* Set background color to transparent */
+  padding: 10px;
+  z-index: 10; /* Ensures it stays above other content */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: none; /* Remove shadow if desired */
+  margin-top: 50px; /* Push the navbar down by 50 pixels */
+  margin: 70px 40px -80px 40px ;
+  
+}
+
+

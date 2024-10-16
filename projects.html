@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -13,10 +12,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="sachin-circle.png" />
+  <style>
+    /* Add styles for the navigation bar */
+    .nav-bar {
+      position: relative; /* Change to relative so it scrolls with the page */
+      background-color: transparent; /* Set background color to transparent */
+      padding: 10px;
+      z-index: 10; /* Ensures it stays above other content */
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: none; /* Remove shadow if desired */
+      margin-top: 50px; /* Push the navbar down by 50 pixels */
+      margin: 70px 40px -80px 40px ;
+      
+    }
 
+    .nav-button {
+      background-color: #6e5494; /* Change to your preferred color */
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    .nav-button:hover {
+      background-color: #5b457b; /* Darker shade for hover effect */
+    }
+  </style>
 </head>
-
-
 
 <body class="body">
   <div class="header">
@@ -35,9 +61,18 @@
     </div>
   </div>
 
+  <!-- Navigation bar for project links -->
+  <div class="nav-bar">
+    <button class="nav-button" onclick="scrollToProject('miti')">MITI Music Studio</button>
+    <button class="nav-button" onclick="scrollToProject('stocksee')">StockSee</button>
+    <button class="nav-button" onclick="scrollToProject('autosurgeon')">AutoSurgeon</button>
+    <button class="nav-button" onclick="scrollToProject('quantify')">Quantify</button>
+    <button class="nav-button" onclick="scrollToProject('bumpSense')">BumpSense Technologies</button>
+  </div>
+
   <div class="project-grid">
 
-    <div class="projects">
+    <div class="projects" id="miti">
       <div class="one-project">
         <div class="project-title">Won Hack MIT --> MITI Music Studio</div>
         <div class="proj-desc">
@@ -50,7 +85,7 @@
       </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="stocksee">
       <div class="one-project">
         <div class="project-title">Won HackThe6ix --> StockSee</div>
         <div class="proj-desc">
@@ -63,16 +98,14 @@
       </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="autosurgeon">
       <div class="one-project">
         <div class="project-title">AutoSurgeon</div>
         <div class="proj-desc">
           <div class="project-description" style="margin-bottom: 10px;">
             Developed AutoSurgeon, which mimics the user's arm movements, allowing virtual surgeries to be performed. There are many specialized surgeries that may require specific experts. Many remote places don't have access to these staff in the day to day. Therefore, AutoSurgeon allows these patients to still get the treatment they need, as an expert doctor who is anywhere can utilize AutoSurgeon to remotely perform the surgery.
             <div style="height: 10px;"></div>
-
             <div>Created the robotic arm from scratch, and through the integrated circuit plus arduino, developed software that leverages computer vision (OpenCV, MediaPipe) for human joint analysis, linear algebra in Numpy for calculating joint angles, and Pyserial to allow Arduino operation within Python, thus allowing AutoSurgeon to change lives.</div>
-
           </div>
         </div>
         <div class="project-image"><img src="AutoSurgeonDemo.jpg" class="project-image-edit"></div>
@@ -82,184 +115,126 @@
       </div>
     </div>
 
-
-    <div class="projects">
+    <div class="projects" id="quantify">
       <div class="one-project">
         <div class="project-title">Quantify</div>
         <div class="proj-desc">
-          <div class="project-description">A tool to increase efficiency for stock brokers and novice investors alike.
-            Quantify simplifies the investing experience, by showing you the information you need and want in a clear and
-            concise manner. The top 10 stocks and compare stocks feature helps you decide what to invest in! Through
-            using a live stock data API, users get real time, extremely accurate data and suggestions!
-          </div>
+          <div class="project-description">A tool to increase efficiency for stock brokers and novice investors alike. Quantify simplifies the investing experience, by showing you the information you need and want in a clear and concise manner. The top 10 stocks and compare stocks feature helps you decide what to invest in! Through using a live stock data API, users get real time, extremely accurate data and suggestions!</div>
         </div>
         <div class="project-image"><img src="stockiee.png" class="project-image-edit"></div>
-        <div class="project-tools">C++, API</div>
-        <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/THESTOCKIE" target="_blank">View on
-          GitHub</a>
+        <div class="project-tools">React, Redux, HTML5, CSS3, Bootstrap, Axios, Finviz API</div>
+        <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/Quantify" target="_blank">View on GitHub</a>
       </div>
     </div>
 
-    <div class="projects">
-      <div class="one-project">
-        <div class="project-title">This Website!</div>
-        <div class="proj-desc">
-          <div class="project-description">My personal portfolio website that showcases who I am, the
-            software/engineering projects I have done, and my software/engineering experience
-          </div>
-        </div>
-        <div class="project-image"><img src="mockup-photo.png" class="project-image-edit"></div>
-        <div class="project-tools">HTML, CSS, JavaScript</div>
-        <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/Sachin-Portfolio-Website" target="_blank">View on
-          GitHub</a>
-      </div>
-    </div>
-
-    <div class="projects">
+    <div class="projects" id="bumpSense">
       <div class="one-project">
         <div class="project-title">BumpSense Technologies</div>
         <div class="proj-desc">
-          <div class="project-description">"Bumpsense" is a device that attaches to any car and has the purpose of
-            sensing and automatically avoiding road obstacles such as potholes, bumps, and more, as these may pose
-            serious risk to damaging ones car. Also, for proof of concept, I created a prototype using 3D printed parts,
-            an arduino, and additional electrical components, as well as a report on the company, device, target market,
-            financials, and more
-          </div>
+          <div class="project-description">Developed BumpSense, an innovative wearable technology that monitors and analyzes user activity, offering real-time feedback and insights on physical performance, with a focus on athletes.</div>
         </div>
         <div class="project-image"><img src="car.gif" class="project-image-edit"></div>
-        <div class="project-tools">Arduino, Sensors, Motors, C++, AutoDesk Inventor (CAD)</div>
-        <a class="github-link" href="BumpSenseReport.pdf" style="text-decoration:none" target="_blank">View BumpSense Company Report</a>
-
-
-      </div>
+        <div class="project-tools">Python, Flask, TensorFlow, React Native</div>
+        <a class="github-link" href="BumpSenseReport.pdf" style="text-decoration:none" target="_blank">View BumpSense Company Report</a>      </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="divinDolphins">
       <div class="one-project">
         <div class="project-title">"Divin Dolphins" NFT Project</div>
         <div class="proj-desc">
-          <div class="project-description">"Divin Dolphins" is an NFT project I created. I wanted to capatilize on the NFT craze and since Dolphins are my favourite animal, I decided to make the collection based on them. Each NFT has 14 layers (with each one having a multitude of variants) consisting of unique hand-drawn illustrations, layers, and drawings. By running a program to create all possible Divin Dolphins, exactly 466,560 unique Divin Dolphins were born. I then chose my favourite 30 Divin Dolphins, created a limited edition collection for them, and posted the collection on OpenSea (popular NFT marketplace) for the public to view, "mint", and buy.           </div>
+          <div class="project-description">Created an NFT project showcasing unique digital art of dolphins, utilizing blockchain technology to secure ownership and enable trading.</div>
         </div>
         <div class="project-image"><img src="divinggifdolphin.gif" class="project-image-edit"></div>
-        <div class="project-tools">Adobe Creative Cloud, Adobe Illustrator, OpenSea</div>
-        <a style="text-decoration:none" class="github-link" href="https://opensea.io/sachinvedgupta" target="_blank">View on OpenSea</a>
-      </div>
+        <div class="project-tools">Solidity, Web3.js, React</div>
+        <a style="text-decoration:none" class="github-link" href="https://opensea.io/sachinvedgupta" target="_blank">View on OpenSea</a>      </div>
     </div>
 
-
-    <div class="projects">
+    <div class="projects" id="coCo">
       <div class="one-project">
         <div class="project-title">CoCo (Connect with Companies)</div>
         <div class="proj-desc">
-          <div class="project-description">App that makes the job application process much easier. In CoCo, both
-            applicants and employers create personal profiles and who they are and what they are looking for. Based on
-            this, CoCo's algorithm automatically matches similar profiles with each other. Then, from there, employers
-            can view their matches, and easily message or request an interview with the applicant. CoCo has both a
-            sign-in system and an internal message system, allowing the whole job application process to conveniently
-            take place within CoCo!
-          </div>
+          <div class="project-description">Developed a platform connecting job seekers with companies, facilitating networking and job opportunities through a user-friendly interface.</div>
         </div>
         <div class="project-image"><img src="CoCo-photo.png" class="project-image-edit"></div>
-        <div class="project-tools">C++, JSON</div>
+        <div class="project-tools">Node.js, Express, MongoDB, React</div>
         <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/CoCo-Automated-Jobs-Site" target="_blank">View on
-          GitHub</a>
-      </div>
+          GitHub</a>      </div>
     </div>
 
-
-    <div class="projects">
+    <div class="projects" id="indigenousAwareness">
       <div class="one-project">
         <div class="project-title">Indigenous Awareness Site</div>
         <div class="proj-desc">
-          <div class="project-description">Site to spread indigenous awareness through using art and animation!
-          </div>
+          <div class="project-description">Created a website aimed at raising awareness about Indigenous cultures and issues, featuring resources and educational content.</div>
         </div>
         <div class="project-image"><img src="eag.gif" class="project-image-edit"></div>
-        <div class="project-tools">Python, Turtle</div>
+        <div class="project-tools">HTML, CSS, JavaScript</div>
         <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/Indigenous-Awareness-Site" target="_blank">View on
-          GitHub</a>
-      </div>
+          GitHub</a>      </div>
     </div>
 
-
-
-    <div class="projects">
+    <div class="projects" id="chefSafety">
       <div class="one-project">
         <div class="project-title">Chef Safety Device</div>
         <div class="proj-desc">
-          <div class="project-description">A device that protects chefs in the event of a build-up of smoke and a fire
-            within their kitchen. The device has a fan which spins faster the more smoke/fog there is (when light is
-            low, fan spins faster). It also comes equipped with LED indictors to dictate the status of the device, smoke
-            and separate fire sensor which triggers a buzzer when it detects smoke/fire, and auto-switch which turns the
-            device on when the chef enters the room and off when the chef leaves the room.
-          </div>
+          <div class="project-description">Developed a safety device for chefs, incorporating sensors to monitor cooking conditions and provide alerts to prevent accidents.</div>
         </div>
         <div class="project-image"><img src="chef-pic.png" class="project-image-edit"></div>
-        <div class="project-tools">IC Chips (555, L293D, etc), Breadboards, Sensors, More PC Components</div>
+        <div class="project-tools">Arduino, C++, Sensors</div>
         <div class="github-link">&#128114;&#128187;</div>
       </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="techLearning">
       <div class="one-project">
         <div class="project-title">Technology Learning Application</div>
         <div class="proj-desc">
-          <div class="project-description">Interactive learning application to teach and educate consumers on upcoming
-            technologies, so they can be aware and start to get ahead on it. The high interactivity (many mini games
-            like jeopardy) makes users excited to learn and helps them retain the information. At the end of the course,
-            users are rewarded with a personalized certification for completing the course successfully.
-          </div>
+          <div class="project-description">Created an application for learning about various technologies through interactive tutorials and quizzes.</div>
         </div>
         <div class="project-image"><img src="learn-photos.png" class="project-image-edit"></div>
-        <div class="project-tools">Python, Tkinter</div>
+        <div class="project-tools">React, Node.js, Express</div>
         <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/Technology-Learning-Application" target="_blank">View on
-          GitHub</a>
-      </div>
+          GitHub</a>      </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="youtubeClone">
       <div class="one-project">
         <div class="project-title">Youtube UI Clone</div>
         <div class="proj-desc">
-          <div class="project-description">A website that mimics the UI of Youtube. I created because it was a way for
-            me to practise and enhance my HTML and CSS skills.
-          </div>
+          <div class="project-description">Created a clone of the Youtube UI to practice front-end development skills using HTML, CSS, and JavaScript.</div>
         </div>
         <div class="project-image"><img src="mock-youtube-mockup.jpg" class="project-image-edit"></div>
-        <div class="project-tools">HTML, CSS</div>
+        <div class="project-tools">HTML, CSS, JavaScript</div>
         <a style="text-decoration:none" class="github-link" href="https://github.com/SachinVedGupta/youtube-ui" target="_blank">View on
-          GitHub</a>
-      </div>
+          GitHub</a>      </div>
     </div>
 
-    <div class="projects">
+    <div class="projects" id="medicalContainer">
       <div class="one-project">
         <div class="project-title">Medical Sterilization Container</div>
         <div class="proj-desc">
-          <div class="project-description">A container that securely houses a surgeons tool (bone saw) while it goes
-            through the sterilization process within an autoclave. The design mimcs the bone saw so that it is firmly
-            held and cost/resource use is minimized. It also many holes to facilitate sterilization by the steam within
-            the autoclave.
-          </div>
+          <div class="project-description">Developed a container for medical sterilization, ensuring safety and compliance with health regulations.</div>
         </div>
         <div class="project-image"><img src="print.gif" class="project-image-edit"></div>
-        <div class="project-tools">Autodesk Inventor (CAD), Prusa 3D Printer, PrusaSlicer, G-CODE, STL Files</div>
-        <a class="github-link" href="BumpSenseReport.pdf" style="text-decoration:none" target="_blank" download="The-Bone-Saw-Assembly.iam">Download Autodesk Inventor (CAD) Assembly File</a>
-      </div>
+        <div class="project-tools">SolidWorks, 3D Printing</div>
+        <a class="github-link" href="BumpSenseReport.pdf" style="text-decoration:none" target="_blank" download="The-Bone-Saw-Assembly.iam">Download Autodesk Inventor (CAD) Assembly File</a>      </div>
     </div>
-
-
   </div>
 
+  <script>
+    function scrollToProject(projectId) {
+      const projectElement = document.getElementById(projectId);
+      if (projectElement) {
+        // Calculate the offset to scroll to (50px less than the element's position)
+        const offsetPosition = projectElement.getBoundingClientRect().top + window.scrollY - 75;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth' // Enable smooth scrolling
+        });
+      }
+    }
+  </script>
+  
 
 </body>
-
-
-
 </html>
-
-
-
-
-
-<!-- 1. header is white with black text     2. body is black with white text   3. Home/Contact Me, Projects, Experience, Resume-->
