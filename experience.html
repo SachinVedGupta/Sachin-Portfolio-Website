@@ -1,116 +1,36 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-  <title>Sachin Gupta</title>
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="general.css">
-  <link rel="stylesheet" href="experience.css">
-  <script defer src="experience.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" type="image/x-icon" href="sachin-circle.png" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Gupta - Experience</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="experience.css">
+    <script defer src="experience.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="sachin-circle.png" />
 </head>
-
-
-
 <body class="body">
-  <div class="header">
-    <div class="left-side-header">
-      <button class="tabs1"><a href="index.html" class="clicked" style="text-decoration:none"><span
-            class="third-color">&lt;</span><span class="first-color">Sachin</span> Gupta<span
-            class="second-color">&gt;</span></a></button>
-      <button class="sg"><a href="index.html" class="clicked" style="text-decoration:none"><span
-            class="third-color">&lt;</span><span class="first-color">S</span>G<span
-            class="second-color">&gt;</span></a></button>
+    <div class="header">
+        <div class="left-side-header">
+            <button class="tabs1"><a href="index.html" class="clicked" style="text-decoration:none"><span class="third-color">&lt;</span><span class="first-color">Sachin</span> Gupta<span class="second-color">&gt;</span></a></button>
+            <button class="sg"><a href="index.html" class="clicked" style="text-decoration:none"><span class="third-color">&lt;</span><span class="first-color">S</span>G<span class="second-color">&gt;</span></a></button>
+        </div>
+        <div class="right-side-header">
+            <button class="tabs"><a href="projects.html" style="text-decoration:none">Projects</a></button>
+            <button class="tabs"><a href="experience.html" style="text-decoration:none">Experience</a></button>
+            <button class="tabs"><a href="resume.html" style="text-decoration:none">Resume</a></button>
+        </div>
     </div>
-    <div class="right-side-header">
-      <button class="tabs"><a href="projects.html" style="text-decoration:none">Projects</a></button>
-      <button class="tabs"><a href="experience.html" style="text-decoration:none">Experience</a></button>
-      <button class="tabs"><a href="resume.html" style="text-decoration:none">Resume</a></button>
+
+    <div class="experience">
+        <div id="experience-list"></div>
+        <div style="height: 60px;"></div> <!-- Empty div for spacing -->
     </div>
-  </div>
-
-  <div class="experience">
-    <div class="experience-left">
-      <div class="bottom-left-bar"></div>
-      <div class="module">
-        <div class="module-name">UofT Hacks and Delta Hacks</div>
-        <div class="module-description">Invited to code in UofT Hacks hosted in downtown Toronto. Also, invited to code in the DeltaHacks Hackathon, which takes place at McMaster
-          University</div>
-        <div class="module-skills">Python, C++, HTML, CSS, JavaScript</div>
-        <div class="module-abs-left">Jan 2024</div>
-
-
-      </div>
-      <div class="module">
-        <div class="module-name">Youth Coach</div>
-        <div class="module-description">Worked as a Youth Coach for the Rogers, Jays Care Foundation. Led 25 youth
-          across over 40 curated games and activities, with the goal of instilling a love for baseball, sports, and
-          school within the youth. Also, awarded $1000 scholarship for my hard work and excellent results. </div>
-        <div class="module-skills">Interpersonal Skills, Creativity, Communication, Leadership</div>
-        <div class="module-abs-left-1">Jun - Aug 2023</div>
-      </div>
-      <div class="module">
-        <div class="module-name">Advanced Hack Club</div>
-        <div class="module-description">Mentor to students and taught them coding</div>
-        <div class="module-skills">Python, Teaching, Mentoring</div>
-        <div class="module-abs-left-2">Sep 2022 - Jun 2023</div>
-      </div>
-
-    </div>
-    <div class="experience-middle">
-      <div class="arrows"> <span class="arrows1">V V V V V V V</span> <span class="arrows2">V V V V V V V V V V V V
-          V</span> <span class="arrows3">V V V V V V V V V V V V V V V V V V V</span> <span class="arrows4">V V V V V V
-          V V V V V V V V V V V V V V V V V V</span> <span class="arrows5">V V V V V V V V V V V V V V V V V V V V
-          V</span> <span class="arrows6">V V V V V V V V V V V V V</span> <span class="arrows7">V V V V V V V V V V V V
-          V V V V V V V V V V V V V V V V V V V V V</span>
-
-
-      </div>
-    </div>
-    <div class="experience-right">
-      <div class="bottom-right-bar"></div>
-      <div class="module2">
-        <div class="module-name2">Sumo Bots</div>
-        <div class="module-description">Competition at McMaster University where robots fight each other. I work on my
-          team's software aspect - autonomy, obstacle avoidance, and pushing the opposing robot </div>
-        <div class="module-skills">Arduino (C++)</div>
-        <div class="module-abs-right">Jan 2024</div>
-      </div>
-      <div class="module2">
-        <div class="module-name2">My First Client!</div>
-        <div class="module-description">Created a series of graphics for JSOT (Jain Society of Toronto) of which were
-          used in their 2023 Annual Members Publication. This marked the start of "Sachin Graphic Design Company"!</div>
-        <div class="module-skills">Professionalism, Working with Clients, Creativity</div>
-        <div class="module-abs-right">Jul 2023</div>
-      </div>
-      <div class="module2">
-        <div class="module-name2">DECA</div>
-        <div class="module-description">Pitched a start-up business concept, "Bumpsense", to a panel of judges (in
-          Toronto). "Bumpsense" is a device that attaches to any car and has the purpose of sensing and automatically
-          avoiding road obstacles such as potholes, bumps, and more, as these may pose serious risk to damaging ones
-          car. Also, for proof of concept, I created a prototype using 3D printed parts, an arduino, and additional
-          electrical components, as well as a report on the company, device, target market, financials, and more.</div>
-        <div class="module-skills">Arduino (C++), 3D Modelling (CAD), Innovation, Public Speaking, Marketing</div>
-        <div class="module-abs-right-1">Sep 2022 - Feb 2023</div>
-      </div>
-
-    </div>
-  </div>
-
-
+    
+    <div id="date-display" class="sticky-date">Current Date: </div>
 </body>
-
-
-
 </html>
-
-
-
-
-
-<!-- 1. header is white with black text     2. body is black with white text   3. Home/Contact Me, Projects, Experience, Resume-->

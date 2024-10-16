@@ -1,239 +1,82 @@
-.experience {
-  display: grid;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
   color: white;
-  margin-top: -100px;
-  grid-template-columns: 1fr 20px 1fr;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px; /* Added padding at the bottom */
 }
 
-.experience-left {
-  flex: 1;
-  align-items: center;
+header {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 15px;
   text-align: center;
-  display: grid;
-  grid-template-rows: auto;
-  padding: 0px 40px;
-  background-color: #1f1f1f;
-  grid-template-rows: 800px 1000px 1000px;
-  position: relative;
-
+  font-size: 24px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-
-.bottom-left-bar {
-  background-color: #5d656a;
-  height: 60px;
-  bottom: -60px;
-  left: 0;
-  right: 0;
-  position: absolute;
-}
-
-.bottom-right-bar {
-  background-color: #1f1f1f;
-  height: 60px;
-  bottom: -60px;
-  left: 0;
-  right: 0;
-  position: absolute;
+#experience-list {
+  padding-top: 70px; /* Ensure content starts below the header */
+  margin: 20px;
 }
 
 .module {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #536677;
-  border-radius: 20px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 0 30px;
-  row-gap: 10px;
-  position: relative;
-  opacity: 0.9;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-  z-index: 5;
-
+  margin-bottom: 20px;
+  transition: transform 0.3s;
 }
 
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-
-.module2 {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #1f1f1f;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 0 30px;
-  row-gap: 20px;
-  position: relative;
-  transition: all 1s;
-  opacity: 0.9;
-  filter: blur(1px);
-  transform: translateX(100%);
-  transition: all 2s;
-  z-index: 5;
-
-}
-
-.show2 {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-
+.module:hover {
+  transform: scale(1.02);
 }
 
 .module-name {
   font-weight: bold;
-  font-size: 20px;
-  width: 100%;
-  border-bottom: 3px solid #536677;
-  padding-bottom: 20px;
-
-}
-
-.module-name2 {
-  font-weight: bold;
-  font-size: 20px;
-  width: 100%;
-  border-bottom: 3px solid #1f1f1f;
-  padding-bottom: 20px;
+  font-size: 1.2em;
 }
 
 .module-description {
-  font-size: 15px;
+  margin: 10px 0;
 }
 
 .module-skills {
-  font-size: 12px;
-  margin-top: 20px;
+  font-style: italic;
+  color: #b0b0b0;
+}
+
+.module-date {
   font-weight: bold;
 }
 
-.experience-middle {
-  width: 20px;
-  top: 55px;
-  bottom: 0;
-  background-color: white;
-  text-align: center;
-  position: relative;
+.internship {
+  border-left: 5px solid #007bff; /* Blue color for internships */
 }
 
-.arrows {
-  background-color: white;
-  width: 20px;
-  position: absolute;
-  top: 100px;
-  right: 0;
-  line-height: 25px;
-  color: black;
-  z-index: 1
+.technical-team {
+  border-left: 5px solid #28a745; /* Green color for technical team roles */
 }
 
-.experience-right {
-  flex: 1;
-  align-items: center;
-  text-align: center;
-  display: grid;
-  grid-template-rows: 780px 1355px 650px;
-  padding: 20px 40px;
-  background-color: #5d656a;
-  padding-top: 400px;
-  padding-bottom: 160px;
-  position: relative;
-
+.non-coding {
+  border-left: 5px solid #ffc107; /* Yellow color for non-coding jobs */
 }
 
-.module-abs-left {
-  position: absolute;
-  top: 0px;
-  right: -134px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  color: black;
-  font-weight: bold;
-  z-index: 100;
-  opacity: 1;
-}
-
-.module-abs-left-1 {
-  position: absolute;
-  top: 0px;
-  right: -190px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  color: black;
-  font-weight: bold;
-  z-index: 100;
-  opacity: 1;
-}
-
-.module-abs-left-2 {
-  position: absolute;
-  top: 0px;
-  right: -240px;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  color: black;
-  font-weight: bold;
-  z-index: 100;
-  opacity: 1;
-}
-
-.module-abs-right {
-  position: absolute;
-  top: 0px;
-  left: -134px;
-  background-color: black;
-  padding: 10px;
-  border-radius: 10px;
+#date-display {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
   color: white;
-  font-weight: bold;
-  z-index: 100;
-  opacity: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
-
-.module-abs-right-1 {
-  position: absolute;
-  top: 0px;
-  left: -239px;
-  background-color: black;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
-  z-index: 100;
-  opacity: 1;
-}
-
-.arrows1 {
-  color: red;
-}
-.arrows2 {
-  color: orange;
-}
-.arrows3 {
-  color: green;
-}
-.arrows4 {
-  color: rgb(139, 173, 184);
-}
-.arrows5 {
-  color: blue;
-}
-.arrows6 {
-  color: indigo;
-}
-.arrows7 {
-  color: violet;
-}
-
-
-
-
